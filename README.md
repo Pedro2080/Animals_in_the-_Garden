@@ -1,7 +1,7 @@
 # Animals in the Garden
 
 There is a square garden of size SIZE x SIZE (where 1 < SIZE < 15).
-There are animals in the garden like: cats, dogs and turtles.
+There are animals in the garden like: **cats**, **dogs** and **turtles**.
 The purpose of the project is to track their location.
 Each animal has its (one) owner, one person can have several pets.
 
