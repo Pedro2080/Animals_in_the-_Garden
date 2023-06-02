@@ -1,13 +1,12 @@
 from abc import ABC, abstractmethod
 
 
-class Animal():
+class Animal(ABC):
     """
     Each animal will have different implementation of this method
     Example: turtle
     """
     def __int__(self, name, gender, age, position_row, position_column, owner):
-        self.name = name
         self.gender = gender
         self.age = age
         self.position_row = position_row
@@ -16,44 +15,52 @@ class Animal():
 
     @abstractmethod
     def move(self, direction):
-
-    #getter method
-    def getName(self):
-
+    # getter method
+    @property
+    def name(self):
         return self.name
-
     # setter method
-    def setName(self, name):
+    @name.setter
+    def name(self, name):
         self.name = name
-
-    def getGender(self):
-
+    @property
+    def gender(self):
         return self.gender
-
-    def setGender(self, gender):
+    # setter method
+    @gender.setter
+    def gender(self, gender):
         self.gender = gender
 
-    def getAge(self):
-
+    @property
+    def age(self):
         return self.age
-
-    def setAge(self, age):
+    # setter method
+    @age.setter
+    def age(self, age):
         self.age = age
 
-    def getPositionRow(self):
-
+    # getter method
+    @property
+    def position_row(self):
         return self.position_row
 
-    def setPositionRow(self, position_row):
+    # setter method
+    @position_row.setter
+    def position_row(self, position_row):
         self.position_row =position_row
 
-    def getPosiotionColumn(self):
-
+    @property
+    def position_column(self):
         return self.position_column
 
-    def getOwner(self):
+    @position_column.setter
+    def position_column(self,position_column):
+        self.position_column = position_column
 
+    @property
+    def owner(self):
         return self.owner
-
-    def setOwner(self, owner):
+    # setter method
+    @owner.setter
+    def owner(self, owner):
         self.owner = owner
