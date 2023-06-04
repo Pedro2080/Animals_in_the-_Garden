@@ -1,72 +1,78 @@
 from abc import ABC, abstractmethod
 
-
 class Animal(ABC):
     """
     Each animal will have different implementation of this method
     Example: turtle
     """
-    def __int__(self, name, gender, age, position_row, position_column, owner):
-        self.gender = gender
-        self.age = age
-        self.position_row = position_row
-        self.position_column = position_column
-        self.owner = owner
+    def __init__(self, name, gender, age, position_row, position_column, owner):
+        self._name = name
+        self._gender = gender
+        self._age = age
+        self._position_row = position_row
+        self._position_column = position_column
+        self._owner = owner
 
     @abstractmethod
     def move(self, direction):
+        pass
 
     # getter method
     @property
     def name(self):
-        return self.name
+        return self._name
 
     # setter method
     @name.setter
     def name(self, name):
-        self.name = name
+        self._name = name
+
+    # getter method
     @property
     def gender(self):
-        return self.gender
+        return self._gender
 
     # setter method
     @gender.setter
     def gender(self, gender):
-        self.gender = gender
+        self._gender = gender
 
     # getter method
     @property
     def age(self):
-        return self.age
+        return self._age
 
     # setter method
     @age.setter
     def age(self, age):
-        self.age = age
+        self._age = age
 
     # getter method
     @property
     def position_row(self):
-        return self.position_row
+        return self._position_row
 
     # setter method
     @position_row.setter
     def position_row(self, position_row):
-        self.position_row =position_row
+        self._position_row = position_row
 
+    # getter method
     @property
     def position_column(self):
-        return self.position_column
+        return self._position_column
 
+    # setter method
     @position_column.setter
-    def position_column(self,position_column):
-        self.position_column = position_column
+    def position_column(self, position_column):
+        self._position_column = position_column
 
+    # getter method
     @property
     def owner(self):
-        return self.owner
+        return self._owner
 
     # setter method
     @owner.setter
     def owner(self, owner):
-        self.owner = owner
+        self._owner = owner
