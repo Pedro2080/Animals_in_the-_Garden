@@ -15,10 +15,12 @@ class Animal(ABC):
 
     @abstractmethod
     def move(self, direction):
+
     # getter method
     @property
     def name(self):
         return self.name
+
     # setter method
     @name.setter
     def name(self, name):
@@ -26,14 +28,17 @@ class Animal(ABC):
     @property
     def gender(self):
         return self.gender
+
     # setter method
     @gender.setter
     def gender(self, gender):
         self.gender = gender
 
+    # getter method
     @property
     def age(self):
         return self.age
+
     # setter method
     @age.setter
     def age(self, age):
@@ -60,6 +65,7 @@ class Animal(ABC):
     @property
     def owner(self):
         return self.owner
+
     # setter method
     @owner.setter
     def owner(self, owner):
