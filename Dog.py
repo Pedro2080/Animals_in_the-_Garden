@@ -6,7 +6,7 @@ class Dog(Animal):
         super().__init__(name, gender, age, position_row, position_column, owner)
         self.breed = breed
 
-        # getter method
+    # getter method
     @property
     def breed(self):
         return self.breed
