@@ -18,6 +18,10 @@ class Animal(ABC):
     def move(self, direction):
         pass
 
+    def exibir(self):
+        print(f"{self._name}, {self._owner}")
+
+
     # getter method
     @property
     def name(self):
