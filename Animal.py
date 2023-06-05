@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class Animal(ABC):
     """
     Each animal will have different implementation of this method
@@ -16,6 +17,10 @@ class Animal(ABC):
     @abstractmethod
     def move(self, direction):
         pass
+
+    def exibir(self):
+        print(f"{self._name}, {self._owner}")
+
 
     # getter method
     @property
@@ -76,3 +81,8 @@ class Animal(ABC):
     @owner.setter
     def owner(self, owner):
         self._owner = owner
+
+
+anim = Animal("a", "m", 14, "w", "e", "y")
+
+anim.exibir()
