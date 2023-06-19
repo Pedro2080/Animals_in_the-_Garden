@@ -1,6 +1,6 @@
 """from Animals_in_the_Garden.Functions import addOwner"""
 from Animals_in_the_Garden.Functions import create_users_file, check_if_file_exist
-from Animals_in_the_Garden.Functions import display_menu, add_user
+from Animals_in_the_Garden.Functions import display_menu, add_user, check_if_username_exists
 
 users_file_name = 'users.txt'
 animals_file_name = 'animals.txt'
@@ -27,3 +27,7 @@ while True:
         add_user(users_file_name, owner_name, owner_surname, owner_gender, owner_age)
         print("---------------------------")
         break
+
+delete_user = input("Enter the user to be deleted:\n") # TODO
+
+check_if_username_exists(users_file_name, delete_user)

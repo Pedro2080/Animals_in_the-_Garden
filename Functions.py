@@ -46,9 +46,29 @@ def add_user(file_name, name, surname, sex, age):
         print('There was an error opening the file!\n')
     else:
         try:
-            check_file.write(f'{name}, {surname}, {sex}, {age}\n')
+            check_file.writelines(f'{name}, {surname}, {sex}, {age}\n')
         except:
             print('There was an error when writing the data!\n')
         else:
             print(f'name:{name}, surname:{surname}, sex:{sex}, age:{age} record added successfully.')
             check_file.close()
+
+
+def check_if_username_exists(file_name, username): # TODO
+    try:
+        check_file = open(file_name, 'rt')
+        file_read_lines = check_file.readlines()
+        check_file.close()
+
+        for user in file_read_lines:
+            lines = user.split()
+
+            for each_lines in lines:
+                file_lines = each_lines.lower().strip()
+                if file_lines == username:
+                    print(f"The user {file_lines} exixts.")
+                    break
+                else:
+                    print(f'The user {file_lines} does not exist.')
+    except FileNotFoundError:
+        print('The file does not exist')
