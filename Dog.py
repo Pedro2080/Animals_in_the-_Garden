@@ -15,3 +15,6 @@ class Dog(Animal):
     @breed.setter
     def breed(self, breed):
         self.breed = breed
+
+#    def move(self, direction):
+
