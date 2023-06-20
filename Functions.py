@@ -1,9 +1,5 @@
-"""from Animals_in_the_Garden.AnimalsGarden import header"""
 
-"""Check if the file exists, if not create one"""
-
-
-def check_if_file_exist(file_name):
+def check_if_file_exist(file_name): # Check if the file exists, if not create one
     try:
         check_file = open(file_name, 'rt')
         check_file.close()
@@ -37,21 +33,6 @@ def display_menu():
     print("7. Move an animal")
     print("8. Feed the turtle")
     print("0. Save and exit")
-
-
-def add_user(file_name, name, surname, sex, age):
-    try:
-        check_file = open(file_name, 'at')  # append text
-    except:
-        print('There was an error opening the file!\n')
-    else:
-        try:
-            check_file.writelines(f'{name}, {surname}, {sex}, {age}\n')
-        except:
-            print('There was an error when writing the data!\n')
-        else:
-            print(f'name:{name}, surname:{surname}, sex:{sex}, age:{age} record added successfully.')
-            check_file.close()
 
 
 def check_if_username_exists(file_name, username): # TODO
