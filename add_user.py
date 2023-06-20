@@ -2,7 +2,7 @@ from Animals_in_the_Garden.AnimalsGarden import users_file_name
 from Animals_in_the_Garden.Owner import Owner
 
 
-def add_user():
+def add_owner():
     owners_list = []
     global check_file
 

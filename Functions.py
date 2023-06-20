@@ -1,4 +1,3 @@
-
 def check_if_file_exist(file_name): # Check if the file exists, if not create one
     try:
         check_file = open(file_name, 'rt')
@@ -19,10 +18,10 @@ def create_users_file(users_file_name):
         print(f'File {users_file_name} created successfully!')
 
 
-"""main menu to be displayed each time user interacts"""
-
-
 def display_menu():
+    """
+    main menu to be displayed each time user interacts
+    """
     print("Enter the number for the below options:")
     print("1. Add owner")
     print("2. Delete the owner")
@@ -34,22 +33,3 @@ def display_menu():
     print("8. Feed the turtle")
     print("0. Save and exit")
 
-
-def check_if_username_exists(file_name, username): # TODO
-    try:
-        check_file = open(file_name, 'rt')
-        file_read_lines = check_file.readlines()
-        check_file.close()
-
-        for user in file_read_lines:
-            lines = user.split()
-
-            for each_lines in lines:
-                file_lines = each_lines.lower().strip()
-                if file_lines == username:
-                    print(f"The user {file_lines} exixts.")
-                    break
-                else:
-                    print(f'The user {file_lines} does not exist.')
-    except FileNotFoundError:
-        print('The file does not exist')
