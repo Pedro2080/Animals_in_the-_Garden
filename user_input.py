@@ -2,6 +2,7 @@ from Animals_in_the_Garden.add_user import add_owner
 from Animals_in_the_Garden.check_if_user_exist import check_if_username_exists
 from Animals_in_the_Garden.list_owners import list_owners
 from Animals_in_the_Garden.delete_owner import delete_owner
+from Animals_in_the_Garden.add_animal import add_animal
 
 
 def input_user():
@@ -31,3 +32,13 @@ def input_user():
             delete_owner()
             print("---------------------------")
             break
+
+        elif option == 5:
+            print("Chosen 5. Add a new animal:")
+            add_animal()
+            print("---------------------------")
+            break
+
+
+
+

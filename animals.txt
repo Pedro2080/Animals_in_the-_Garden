@@ -1,0 +1,3 @@
+Laika, m, 5, 0,0,White
+Maja, F, 4, 0,0,Black
+Biaka, m, 9, 0,0,hidden in the shell

@@ -14,7 +14,6 @@ class Animal(ABC):
         self._position_column = position_column
         self._owner = owner
 
-    @abstractmethod
     def move(self, direction):
         pass
 
