@@ -25,13 +25,18 @@ The program should provide the following features:
 - Text menu that allows you to select individual options or exit from the program.
 
 Example:
-1. Add owner
-2. Delete the owner
-3. List of owners
-4. Move the animal
-5. Feed the turtle
-... <other options>
-0. Finish
+1.  Add owner
+2.  Check if owner exists
+3.  List all owners
+4.  Remove an owner
+5.  Add a new animal
+6.  Check if animal exists
+7.  List all animals
+8.  Remove an animal
+9.  Move the animal
+10. Feed the turtle
+<other options>
+0. Save and exit
 
 ## Register of owners
 - The ability to add a new owner.

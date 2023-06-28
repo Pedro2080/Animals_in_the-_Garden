@@ -10,4 +10,3 @@ if not check_if_file_exist(users_file_name):
 
 if not check_if_file_exist(animals_file_name):
     create_users_file(animals_file_name)
-

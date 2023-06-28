@@ -16,28 +16,29 @@ def input_user():
             break
 
         elif option == 2:
-            print('Chosen 2. List owner:\n')
+            print('Chosen 2. Check if owner exists:\n')
             check_if_username_exists()
             print("---------------------------")
             break
 
         elif option == 3:
-            print('Chosen 3. List owner:\n')
+            print('Chosen 3. List all owners:\n')
             list_owners()
             print("---------------------------")
             break
 
         elif option == 4:
-            print('Chosen 4. Delete owner:\n')
+            print('Chosen 5. Remove an owner:\n')
             delete_owner()
             print("---------------------------")
             break
 
         elif option == 5:
-            print("Chosen 5. Add a new animal:")
+            print("Chosen 4. Add a new animal:")
             add_animal()
             print("---------------------------")
             break
+
 
 
 
