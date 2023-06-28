@@ -1,6 +1,7 @@
 from Animals_in_the_Garden.add_user import add_owner
 from Animals_in_the_Garden.check_if_user_exist import check_if_username_exists
 from Animals_in_the_Garden.check_if_animal_exists import check_if_animal_exists
+from Animals_in_the_Garden.list_all_animals import list_animals
 from Animals_in_the_Garden.list_owners import list_owners
 from Animals_in_the_Garden.delete_owner import delete_owner
 from Animals_in_the_Garden.add_animal import add_animal
@@ -43,6 +44,12 @@ def input_user():
         elif option == 6:
             print("Chosen 6. Check if animal exists:")
             check_if_animal_exists()
+            print("---------------------------")
+            break
+
+        elif option == 7:
+            print("Chosen 7. List of all animals:")
+            list_animals()
             print("---------------------------")
             break
 
